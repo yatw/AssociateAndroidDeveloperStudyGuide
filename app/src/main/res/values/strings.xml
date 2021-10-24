@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidTestStudyGuide</string>
+
+    <string name="notification_channel_id">StudyAppNotificationChannelID</string>
+    <string name="notification_channel_name">StudyAppNotificationChannelName</string>
+    <string name="notification_channel_desc">pointless</string>
+</resources>

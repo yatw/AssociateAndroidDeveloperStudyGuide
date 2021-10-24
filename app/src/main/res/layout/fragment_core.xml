@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btn_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SnackBar example"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification example"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_localize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Localization example"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_workmanager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workmanager example"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

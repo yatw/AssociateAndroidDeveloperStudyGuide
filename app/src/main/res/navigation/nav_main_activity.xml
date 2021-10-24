@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main_activity"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.androidteststudyguide.features.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_snackBarFragment"
+            app:destination="@id/snackBarFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_workManagerFragment"
+            app:destination="@id/workManagerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/snackBarFragment"
+        android:name="com.example.androidteststudyguide.features.core.SnackBarFragment"
+        android:label="SnackBarFragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.androidteststudyguide.features.core.NotificationFragment"
+        android:label="NotificationFragment" />
+    <fragment
+        android:id="@+id/workManagerFragment"
+        android:name="com.example.androidteststudyguide.features.core.WorkManagerFragment"
+        android:label="WorkManagerFragment" />
+
+</navigation>
