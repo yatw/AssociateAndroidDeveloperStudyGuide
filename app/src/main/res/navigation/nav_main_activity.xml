@@ -17,8 +17,15 @@
         <action
             android:id="@+id/action_homeFragment_to_workManagerFragment"
             app:destination="@id/workManagerFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pager3Fragment"
+            app:destination="@id/pager3Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_pager3MediatorFragment"
+            app:destination="@id/pager3MediatorFragment" />
     </fragment>
 
+    <!-- Android Core -->
     <fragment
         android:id="@+id/snackBarFragment"
         android:name="com.example.androidteststudyguide.features.core.SnackBarFragment"
@@ -31,5 +38,19 @@
         android:id="@+id/workManagerFragment"
         android:name="com.example.androidteststudyguide.features.core.WorkManagerFragment"
         android:label="WorkManagerFragment" />
+
+    <!-- UI -->
+    <fragment
+        android:id="@+id/pager3Fragment"
+        android:name="com.example.androidteststudyguide.features.ui.pager.PagerFragment"
+        android:label="Pager3Fragment" />
+
+    <fragment
+        android:id="@+id/pager3MediatorFragment"
+        android:name="com.example.androidteststudyguide.features.ui.pagerWithMediator.RemoteMediatorFragment"
+        android:label="Pager3MediatorFragment" />
+
+
+
 
 </navigation>

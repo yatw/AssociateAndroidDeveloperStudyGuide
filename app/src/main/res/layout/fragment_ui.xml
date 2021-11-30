@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btn_custom_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Theme example"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_accessibility_hook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accessibility hook"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btn_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paging3 example"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_pager_and_remote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paging3 With RemoteMediator"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu example"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/btn_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drawer example"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

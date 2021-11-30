@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.androidteststudyguide.databinding.FragmentHomeBinding
 import com.example.androidteststudyguide.features.core.CoreFragment
+import com.example.androidteststudyguide.features.ui.UIFragment
 import com.google.android.material.tabs.TabLayoutMediator
 
 
@@ -47,7 +48,11 @@ class HomeFragment: Fragment() {
         }
 
         override fun createFragment(slideIndex: Int): Fragment {
-            return CoreFragment()
+            return when (slideIndex){
+                0 -> CoreFragment()
+                1 -> UIFragment()
+                else -> CoreFragment()
+            }
         }
     }
 

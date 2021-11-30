@@ -21,9 +21,11 @@ import android.graphics.BitmapFactory
 
 
 /**
+ *
  *  Steps:
  *
  *   1 create a channel
+ *
  *   2 create a notification builder
  *
  *
