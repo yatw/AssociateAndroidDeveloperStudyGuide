@@ -41,9 +41,6 @@ class RemoteMediatorFragment: Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
-
-
         binding = FragmentPagerBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -83,7 +80,7 @@ class RemoteMediatorFragment: Fragment() {
                     ?: loadState.prepend as? LoadState.Error
                 errorState?.let {
                     Toast.makeText(
-                        this@RemoteMediatorFragment.requireContext(),
+                        requireContext(),
                         "\uD83D\uDE28 Wooops ${it.error}",
                         Toast.LENGTH_LONG
                     ).show()

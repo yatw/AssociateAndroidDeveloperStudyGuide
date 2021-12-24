@@ -25,6 +25,10 @@ class UIFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.btnCustomTheme.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_customThemeFragment)
+        }
+
         binding.btnPager.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_pager3Fragment)
         }

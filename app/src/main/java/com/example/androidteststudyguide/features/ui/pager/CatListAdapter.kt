@@ -40,8 +40,6 @@ class CatListAdapter : PagingDataAdapter<PagerViewModel.CatItem, RecyclerView.Vi
 
     override fun onBindViewHolder(holder:  RecyclerView.ViewHolder, position: Int) {
         val item: PagerViewModel.CatItem? = getItem(position)
-
-
         when (item){
             is PagerViewModel.CatItem.CatBreedInfo -> {
                 (holder as CatBreedViewHolder).bind(item.response)
@@ -55,7 +53,6 @@ class CatListAdapter : PagingDataAdapter<PagerViewModel.CatItem, RecyclerView.Vi
                 (holder as CatBreedViewHolder).bind(null)
             }
         }
-
     }
 
     inner class CatBreedViewHolder(binding: ItemCatBinding) : RecyclerView.ViewHolder(binding.root) {

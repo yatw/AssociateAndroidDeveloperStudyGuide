@@ -28,6 +28,7 @@ class PagingSource(
 
         val page = params.key ?: 0
         return try {
+            Timber.i("Thread ==>>>${Thread.currentThread()}")
             Timber.i("loading with page $page")
 
             val response: List<CatBreedResponse> = service.getCatImages(

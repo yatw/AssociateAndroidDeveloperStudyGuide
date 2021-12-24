@@ -73,7 +73,7 @@ class PagerFragment: Fragment() {
                     ?: loadState.prepend as? LoadState.Error
                 errorState?.let {
                     Toast.makeText(
-                        this@PagerFragment.requireContext(),
+                        requireContext(),
                         "\uD83D\uDE28 Wooops ${it.error}",
                         Toast.LENGTH_LONG
                     ).show()

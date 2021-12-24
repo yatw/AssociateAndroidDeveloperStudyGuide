@@ -8,6 +8,9 @@
         android:id="@+id/homeFragment"
         android:name="com.example.androidteststudyguide.features.HomeFragment"
         android:label="HomeFragment" >
+
+
+        <!-- Android Core -->
         <action
             android:id="@+id/action_homeFragment_to_snackBarFragment"
             app:destination="@id/snackBarFragment" />
@@ -17,12 +20,18 @@
         <action
             android:id="@+id/action_homeFragment_to_workManagerFragment"
             app:destination="@id/workManagerFragment" />
+
+        <!-- UI -->
+        <action
+            android:id="@+id/action_homeFragment_to_customThemeFragment"
+            app:destination="@id/customThemeFragment" />
         <action
             android:id="@+id/action_homeFragment_to_pager3Fragment"
             app:destination="@id/pager3Fragment" />
         <action
             android:id="@+id/action_homeFragment_to_pager3MediatorFragment"
             app:destination="@id/pager3MediatorFragment" />
+
     </fragment>
 
     <!-- Android Core -->
@@ -49,8 +58,10 @@
         android:id="@+id/pager3MediatorFragment"
         android:name="com.example.androidteststudyguide.features.ui.pagerWithMediator.RemoteMediatorFragment"
         android:label="Pager3MediatorFragment" />
-
-
+    <fragment
+        android:id="@+id/customThemeFragment"
+        android:name="com.example.androidteststudyguide.features.ui.CustomThemeFragment"
+        android:label="CustomThemeFragment" />
 
 
 </navigation>
