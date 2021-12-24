@@ -5,6 +5,5 @@
     <string name="notification_channel_name">StudyAppNotificationChannelName</string>
     <string name="notification_channel_desc">pointless</string>
 
-
-    <string name="localization_text">This is English</string>
+    <string name="localization_text">這是中文</string>
 </resources>

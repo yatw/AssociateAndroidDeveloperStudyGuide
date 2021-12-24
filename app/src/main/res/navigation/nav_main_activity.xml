@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_homeFragment_to_pager3MediatorFragment"
             app:destination="@id/pager3MediatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_localizationFragment"
+            app:destination="@id/localizationFragment" />
 
     </fragment>
 
@@ -47,6 +50,11 @@
         android:id="@+id/workManagerFragment"
         android:name="com.example.androidteststudyguide.features.core.WorkManagerFragment"
         android:label="WorkManagerFragment" />
+    <fragment
+        android:id="@+id/localizationFragment"
+        android:name="com.example.androidteststudyguide.features.core.LocalizationFragment"
+        android:label="LocalizationFragment" />
+
 
     <!-- UI -->
     <fragment

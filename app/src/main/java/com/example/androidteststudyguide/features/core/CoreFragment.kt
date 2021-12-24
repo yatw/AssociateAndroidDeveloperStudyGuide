@@ -38,6 +38,10 @@ class CoreFragment: Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_workManagerFragment)
         }
 
+        binding.btnLocalize.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_localizationFragment)
+        }
+
 
 
     }

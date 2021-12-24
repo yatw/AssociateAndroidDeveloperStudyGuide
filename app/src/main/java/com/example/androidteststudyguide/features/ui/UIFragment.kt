@@ -36,6 +36,7 @@ class UIFragment: Fragment() {
         binding.btnPagerAndRemote.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_pager3MediatorFragment)
         }
+
     }
 
 
