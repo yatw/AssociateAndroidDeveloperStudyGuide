@@ -123,7 +123,7 @@ class WorkManagerFragment: Fragment() {
         val dataBuilder: Data.Builder = Data.Builder()
         dataBuilder.putString("title", "example startPeriodicWork")
         dataBuilder.putString("content", "if you see this in 15min periodic work success")
-        val data = dataBuilder.build()
+        val data: Data = dataBuilder.build()
 
         requestBuilder.setInputData(data)
 
@@ -134,7 +134,7 @@ class WorkManagerFragment: Fragment() {
     }
 
 
-    /***
+    /**
      * Instead of calling workManager.enqueue(), call workManager.beginWith().
      * This returns a WorkContinuation, which defines a chain of WorkRequests.
      * You can add to this chain of work requests by calling then() method

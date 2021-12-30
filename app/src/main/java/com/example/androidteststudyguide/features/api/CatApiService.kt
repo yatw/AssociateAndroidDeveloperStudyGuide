@@ -29,7 +29,7 @@ interface CatApiService {
 
                 .connectTimeout(60, TimeUnit.SECONDS)
                 .writeTimeout(120, TimeUnit.SECONDS)
-                .readTimeout(60, TimeUnit.SECONDS) // this line fix tiem out problem
+                .readTimeout(60, TimeUnit.SECONDS) // this line fix time out problem
                     // add header to every request
                 .addInterceptor(Interceptor { chain ->
                     val request = chain.request().newBuilder()
